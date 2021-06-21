@@ -15,6 +15,8 @@
 		B115D91A267EF09A00FE6E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B115D918267EF09A00FE6E65 /* LaunchScreen.storyboard */; };
 		B115D925267EF09A00FE6E65 /* LYZKVODemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B115D924267EF09A00FE6E65 /* LYZKVODemoTests.swift */; };
 		B115D930267EF09A00FE6E65 /* LYZKVODemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B115D92F267EF09A00FE6E65 /* LYZKVODemoUITests.swift */; };
+		B115D940267EF4E900FE6E65 /* OCKvoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B115D93F267EF4E900FE6E65 /* OCKvoViewController.m */; };
+		B115D943267EF5B300FE6E65 /* KVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B115D942267EF5B300FE6E65 /* KVOModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,11 @@
 		B115D92B267EF09A00FE6E65 /* LYZKVODemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYZKVODemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B115D92F267EF09A00FE6E65 /* LYZKVODemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYZKVODemoUITests.swift; sourceTree = "<group>"; };
 		B115D931267EF09A00FE6E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B115D93D267EF4E800FE6E65 /* LYZKVODemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LYZKVODemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B115D93E267EF4E900FE6E65 /* OCKvoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCKvoViewController.h; sourceTree = "<group>"; };
+		B115D93F267EF4E900FE6E65 /* OCKvoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCKvoViewController.m; sourceTree = "<group>"; };
+		B115D941267EF5B300FE6E65 /* KVOModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOModel.h; sourceTree = "<group>"; };
+		B115D942267EF5B300FE6E65 /* KVOModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +113,11 @@
 				B115D916267EF09A00FE6E65 /* Assets.xcassets */,
 				B115D918267EF09A00FE6E65 /* LaunchScreen.storyboard */,
 				B115D91B267EF09A00FE6E65 /* Info.plist */,
+				B115D93E267EF4E900FE6E65 /* OCKvoViewController.h */,
+				B115D93F267EF4E900FE6E65 /* OCKvoViewController.m */,
+				B115D93D267EF4E800FE6E65 /* LYZKVODemo-Bridging-Header.h */,
+				B115D941267EF5B300FE6E65 /* KVOModel.h */,
+				B115D942267EF5B300FE6E65 /* KVOModel.m */,
 			);
 			path = LYZKVODemo;
 			sourceTree = "<group>";
@@ -195,6 +207,7 @@
 				TargetAttributes = {
 					B115D909267EF09800FE6E65 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					B115D91F267EF09A00FE6E65 = {
 						CreatedOnToolsVersion = 12.5;
@@ -259,6 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B115D912267EF09800FE6E65 /* ViewController.swift in Sources */,
+				B115D940267EF4E900FE6E65 /* OCKvoViewController.m in Sources */,
+				B115D943267EF5B300FE6E65 /* KVOModel.m in Sources */,
 				B115D90E267EF09800FE6E65 /* AppDelegate.swift in Sources */,
 				B115D910267EF09800FE6E65 /* SceneDelegate.swift in Sources */,
 			);
@@ -436,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XKTT6NGLD;
 				INFOPLIST_FILE = LYZKVODemo/Info.plist;
@@ -445,6 +461,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = zy.com.LYZKVODemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LYZKVODemo/LYZKVODemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,6 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XKTT6NGLD;
 				INFOPLIST_FILE = LYZKVODemo/Info.plist;
@@ -464,6 +483,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = zy.com.LYZKVODemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LYZKVODemo/LYZKVODemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
